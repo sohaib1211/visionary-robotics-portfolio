@@ -20,10 +20,10 @@ const HeroSection = () => {
             Revolutionizing industrial robotics through intelligent systems and sustainable engineering solutions.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="#projects" className="button-primary">
-              View Projects <ArrowRight size={18} />
+            <a href="/src/Portfolio_Online.pdf" className="button-primary" target="_blank" rel="noopener noreferrer">
+              Portfolio <ArrowRight size={18} />
             </a>
-            <a href="#" className="button-secondary">
+            <a href="/src/Resume.pdf" className="button-secondary" target="_blank" rel="noopener noreferrer">
               Download CV <Download size={18} />
             </a>
           </div>
