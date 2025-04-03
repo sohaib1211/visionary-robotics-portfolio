@@ -1,5 +1,6 @@
 
 import { ArrowRight, Download } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const HeroSection = () => {
   return (
@@ -32,12 +33,12 @@ const HeroSection = () => {
         <div className="order-1 md:order-2 flex justify-center animate-fade-in-right">
           <div className="relative w-64 h-64 md:w-80 md:h-80">
             <div className="absolute inset-0 bg-gradient-to-br from-navy to-teal/80 rounded-full opacity-20 animate-pulse-glow"></div>
-            <div className="absolute inset-2 bg-white rounded-full overflow-hidden border-4 border-white shadow-lg">
-              {/* Replace with actual image */}
-              <div className="h-full w-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                <span className="text-xl font-bold text-navy">MS</span>
-              </div>
-            </div>
+            <Avatar className="w-full h-full border-4 border-white shadow-lg">
+              <AvatarImage src="/profile.jpg" alt="Muhammad Sohaib" className="object-cover" />
+              <AvatarFallback className="text-4xl font-bold text-navy bg-gradient-to-br from-gray-200 to-gray-300">
+                MS
+              </AvatarFallback>
+            </Avatar>
           </div>
         </div>
       </div>
