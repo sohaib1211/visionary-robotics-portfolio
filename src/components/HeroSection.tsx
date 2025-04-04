@@ -34,7 +34,7 @@ const HeroSection = () => {
           <div className="relative w-64 h-64 md:w-80 md:h-80">
             <div className="absolute inset-0 bg-gradient-to-br from-navy to-teal/80 rounded-full opacity-20 animate-pulse-glow"></div>
             <Avatar className="w-full h-full border-4 border-white shadow-lg">
-              <AvatarImage src="/profile.jpg" alt="Muhammad Sohaib" className="object-cover" />
+              <AvatarImage src="src/img.jpg" alt="Muhammad Sohaib" className="object-cover" />
               <AvatarFallback className="text-4xl font-bold text-navy bg-gradient-to-br from-gray-200 to-gray-300">
                 MS
               </AvatarFallback>
