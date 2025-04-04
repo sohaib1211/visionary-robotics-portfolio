@@ -20,24 +20,27 @@ const HeroSection = () => {
           <p className="text-lg text-gray-700 mb-8 border-l-4 border-teal pl-4 italic">
             Revolutionizing industrial robotics through intelligent systems and sustainable engineering solutions.
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 relative z-10">
             <a 
               href="/src/Portfolio_Online.pdf" 
               download="Portfolio_Muhammad_Sohaib.pdf"
-              className="button-primary" 
+              className="button-primary relative z-10" 
               target="_blank" 
               rel="noopener noreferrer"
+              onClick={(e) => {
+                console.log("Portfolio button clicked");
+              }}
             >
-              Portfolio <ArrowRight size={18} />
+              Portfolio <ArrowRight size={18} className="ml-1" />
             </a>
             <a 
               href="/src/Resume.pdf" 
               download="Resume_Muhammad_Sohaib.pdf"
-              className="button-secondary" 
+              className="button-secondary relative z-10" 
               target="_blank" 
               rel="noopener noreferrer"
             >
-              Download CV <Download size={18} />
+              Download CV <Download size={18} className="ml-1" />
             </a>
           </div>
         </div>
