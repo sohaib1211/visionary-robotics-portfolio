@@ -21,10 +21,22 @@ const HeroSection = () => {
             Revolutionizing industrial robotics through intelligent systems and sustainable engineering solutions.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="/src/Portfolio_Online.pdf" className="button-primary" target="_blank" rel="noopener noreferrer">
+            <a 
+              href="/src/Portfolio_Online.pdf" 
+              download="Portfolio_Muhammad_Sohaib.pdf"
+              className="button-primary" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
               Portfolio <ArrowRight size={18} />
             </a>
-            <a href="/src/Resume.pdf" className="button-secondary" target="_blank" rel="noopener noreferrer">
+            <a 
+              href="/src/Resume.pdf" 
+              download="Resume_Muhammad_Sohaib.pdf"
+              className="button-secondary" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
               Download CV <Download size={18} />
             </a>
           </div>
